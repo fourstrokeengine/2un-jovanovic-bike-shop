@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korpa - 2UN Jovanovic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .basket-container {
+            padding: 3rem 0;
+        }
+
+        .basket-empty {
+            text-align: center;
+            padding: 4rem 2rem;
+            background-color: var(--light-gray);
+            border-radius: 8px;
+        }
+
+        .basket-empty i {
+            font-size: 5rem;
+            color: var(--gray);
+            margin-bottom: 1rem;
+        }
+
+        .basket-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        .basket-items {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .basket-item {
+            display: grid;
+            grid-template-columns: 100px 1fr auto;
+            gap: 1.5rem;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .basket-item:last-child {
+            border-bottom: none;
+        }
+
+        .basket-item-image {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            background-color: var(--light-gray);
+            border-radius: 4px;
+        }
+
+        .basket-item-image.placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--gray);
+        }
+
+        .basket-item-details h3 {
+            font-size: 1.1rem;
+            color: var(--dark-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .basket-item-brand {
+            color: var(--primary-blue);
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .basket-item-sku {
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .basket-item-price {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--dark-blue);
+        }
+
+        .basket-item-controls {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .quantity-btn {
+            width: 30px;
+            height: 30px;
+            border: 1px solid var(--primary-blue);
+            background-color: var(--white);
+            color: var(--primary-blue);
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+
+        .quantity-btn:hover {
+            background-color: var(--primary-blue);
+            color: var(--white);
+        }
+
+        .quantity-display {
+            width: 50px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .remove-item {
+            color: #dc2626;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+            text-decoration: underline;
+        }
+
+        .remove-item:hover {
+            color: #991b1b;
+        }
+
+        .basket-summary {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+        }
+
+        .basket-summary h2 {
+            font-size: 1.5rem;
+            color: var(--dark-blue);
+            margin-bottom: 1.5rem;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .summary-row.total {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--dark-blue);
+            border-bottom: none;
+            margin-top: 1rem;
+        }
+
+        .basket-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn-checkout {
+            width: 100%;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 1rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .btn-checkout:hover {
+            background-color: var(--secondary-blue);
+        }
+
+        .btn-continue {
+            width: 100%;
+            background-color: var(--white);
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+            padding: 1rem;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .btn-continue:hover {
+            background-color: var(--light-blue);
+        }
+
+        .btn-clear {
+            width: 100%;
+            background-color: transparent;
+            color: #dc2626;
+            border: none;
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 968px) {
+            .basket-content {
+                grid-template-columns: 1fr;
+            }
+
+            .basket-summary {
+                position: static;
+            }
+
+            .basket-item {
+                grid-template-columns: 80px 1fr;
+                gap: 1rem;
+            }
+
+            .basket-item-controls {
+                grid-column: 1 / -1;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo/logo veci.jpg" alt="2UN Jovanovic">
+                    </a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="products.html">Delovi</a></li>
+                    <li><a href="tires.html">Gume i Točkovi</a></li>
+                    <li><a href="services.html">Servis</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                    <a href="basket.html" class="cart-icon">
+                        <i class="fas fa-shopping-basket"></i>
+                        <span id="basketCount" class="basket-count">0</span>
+                    </a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Korpa</h1>
+            <p>Pregledajte i upravljajte proizvodima u korpi</p>
+        </div>
+    </section>
+
+    <!-- Basket Container -->
+    <section class="basket-container container">
+        <div id="basketContainer"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>2UN Jovanovic</h4>
+                    <p>Vaš pouzdan partner za biciklističke delove i servis u Pirotu.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Linkovi</h4>
+                    <ul>
+                        <li><a href="index.html">Početna</a></li>
+                        <li><a href="products.html">Delovi</a></li>
+                        <li><a href="services.html">Servis</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 067 708 6710</li>
+                        <li><i class="fas fa-envelope"></i> unjovanovic@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 7 Juli br 16, Pirot</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 2UN Jovanovic. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/basket-page.js"></script>
+</body>
+</html>

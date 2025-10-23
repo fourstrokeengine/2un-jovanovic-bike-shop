@@ -1,0 +1,132 @@
+
+.gc_blue{
+	color:#337ab7;
+}
+
+.gc_red{
+	color:red;
+}
+
+.gc_green{
+	color:#318550;
+}
+
+.gc_orange{
+	color:orange;
+}
+
+.gc_gold{
+	color:#FFD700;
+}
+
+.gc_greylight{
+	color:#ccc;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+
+/* style for dropdown list menus 
+http://codepen.io/ajaypatelaj/pen/prHjD
+*/
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+/*      margin-top: -6px;  */
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+/* =============================== */
+
+.dropdown-submenu2 {
+    position: relative;
+}
+
+
+/* style for dropdown list menus 
+http://codepen.io/ajaypatelaj/pen/prHjD
+*/
+
+.dropdown-submenu2>.dropdown-menu {
+    top: 0;
+    left: 155%;
+     margin-left: 70px;
+/*      margin-top: -6px;  */
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu2:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu2>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu2:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu2.pull-left {
+    float: none;
+}
+
+.dropdown-submenu2.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+

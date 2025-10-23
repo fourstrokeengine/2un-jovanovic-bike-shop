@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - 2UN Jovanovic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-page {
+            padding: 4rem 0;
+        }
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        .contact-form-section {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form-section h2 {
+            color: var(--dark-blue);
+            margin-bottom: 1.5rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--dark-gray);
+            font-weight: 500;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: var(--secondary-blue);
+        }
+        .contact-info-block {
+            background-color: var(--light-blue);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .contact-info-block h2 {
+            color: var(--dark-blue);
+            margin-bottom: 1.5rem;
+        }
+        .info-item {
+            display: flex;
+            align-items: start;
+            margin-bottom: 1.5rem;
+        }
+        .info-item i {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            margin-right: 1rem;
+            margin-top: 0.25rem;
+        }
+        .info-item-content h3 {
+            font-size: 1.1rem;
+            color: var(--dark-blue);
+            margin-bottom: 0.25rem;
+        }
+        .info-item-content p {
+            color: var(--dark-gray);
+            margin: 0;
+        }
+        .info-item-content a {
+            color: var(--dark-gray);
+            text-decoration: none;
+        }
+        .info-item-content a:hover {
+            color: var(--primary-blue);
+        }
+        .map-section {
+            background-color: var(--light-gray);
+            padding: 3rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .map-section h3 {
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+        }
+        .map-placeholder {
+            background-color: var(--white);
+            padding: 4rem;
+            border-radius: 8px;
+            color: var(--gray);
+        }
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo/logo veci.jpg" alt="2UN Jovanovic">
+                    </a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="products.html">Delovi</a></li>
+                    <li><a href="tires.html">Gume i Točkovi</a></li>
+                    <li><a href="services.html">Servis</a></li>
+                    <li><a href="contact.html" class="active">Kontakt</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                    <a href="quote.html" class="cart-icon"><i class="fas fa-clipboard-list"></i></a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Kontaktirajte Nas</h1>
+            <p>Tu smo da odgovorimo na sva vaša pitanja</p>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Pošaljite Poruku</h2>
+                    <form id="contactForm" action="mailto:unjovanovic@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">Ime i Prezime *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Tip Upita</label>
+                            <select id="subject" name="subject">
+                                <option value="general">Opšti Upit</option>
+                                <option value="service">Pitanje o Servisu</option>
+                                <option value="parts">Pitanje o Delovima</option>
+                                <option value="quote">Zahtev za Ponudu</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Poruka *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Pošalji Poruku
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-block">
+                    <h2>Informacije</h2>
+
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info-item-content">
+                            <h3>Adresa</h3>
+                            <p>7 Juli br 16<br>Pirot, Srbija</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="info-item-content">
+                            <h3>Telefon</h3>
+                            <p><a href="tel:0677086710">067 708 6710</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-item-content">
+                            <h3>Email</h3>
+                            <p><a href="mailto:unjovanovic@gmail.com">unjovanovic@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="info-item-content">
+                            <h3>Radno Vreme</h3>
+                            <p>Ponedeljak - Petak: 09:00 - 19:00<br>
+                            Subota: 09:00 - 15:00<br>
+                            Nedelja: Zatvoreno</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-section">
+                <h3>Pronađite Nas</h3>
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt" style="font-size: 4rem; color: var(--primary-blue);"></i>
+                    <p>7 Juli br 16, Pirot, Srbija</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=7+Juli+br+16+Pirot+Serbia"
+                       target="_blank"
+                       class="btn btn-primary"
+                       style="display: inline-block; margin-top: 1rem;">
+                        Otvori u Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>2UN Jovanovic</h4>
+                    <p>Vaš pouzdan partner za biciklističke delove i servis u Pirotu.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Linkovi</h4>
+                    <ul>
+                        <li><a href="index.html">Početna</a></li>
+                        <li><a href="products.html">Delovi</a></li>
+                        <li><a href="services.html">Servis</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 067 708 6710</li>
+                        <li><i class="fas fa-envelope"></i> unjovanovic@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 7 Juli br 16, Pirot</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 2UN Jovanovic. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

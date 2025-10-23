@@ -1,0 +1,602 @@
+Extracting menu structure from EUROTRADE B2B HTML...
+
+
+============================================================
+Main Category: Pogonski delovi (menuId=1)
+============================================================
+
+  Category: Biciklistički alat (categoryId=9)
+    - Alati (category2Id=261)
+    - 一 OSTALO (category2Id=287)
+
+  Category: Bužiri (categoryId=15)
+    - Sajle za kočnice (category2Id=52)
+    - Hidraulična creva (category2Id=85)
+    - Sajle menjača (category2Id=242)
+
+  Category: Di2 / E-bike (categoryId=23)
+    - Dodaci (category2Id=27)
+    - Baterije (category2Id=40)
+    - Nosači baterija (category2Id=41)
+    - Lančanici pogona (category2Id=64)
+    - Lanci 10 brzina (category2Id=65)
+    - Chains 11 Speed (category2Id=353)
+    - Lanci 9 brzina (category2Id=66)
+    - Punjač (category2Id=68)
+    - Pogoni (category2Id=79)
+    - Brzinomeri (category2Id=80)
+    - Di2 (category2Id=292)
+    - Pogonska jedinica (category2Id=87)
+    - Kablovi (category2Id=96)
+    - Menjači prednji (category2Id=103)
+    - Nable sa unutrašnjim brzinama (category2Id=113)
+    - Čvorište (category2Id=114)
+    - Motor (category2Id=118)
+    - Menjač zadnji (category2Id=185)
+    - Šticne (category2Id=240)
+    - Servisni delovi (category2Id=241)
+    - Prekidač za promenu brzina (category2Id=243)
+    - Sajle menjača/kočnica (category2Id=244)
+    - >>
+    - Sitni delovi (category2Id=250)
+    - Alati (category2Id=261)
+    - Bežična jedinica (category2Id=286)
+
+  Category: Kočnice (categoryId=14)
+    - Paknovi / Ulošci (category2Id=53)
+    - Drumska kočnica (category2Id=54)
+    - Cantilever (category2Id=56)
+    - Disk kočnica (category2Id=83)
+    - Disk kočnice (čeljusti) (category2Id=84)
+    - Pločice disk kočnice (category2Id=86)
+    - Hidraulični setovi BR/BL (category2Id=110)
+    - Hydraulic Assembled Gravel ST/BR (category2Id=348)
+    - Hydraulic Assembled Road ST/BR (category2Id=321)
+    - Adapteri disk kočnica (category2Id=119)
+    - Roller Kočnica (category2Id=236)
+    - Rotori (category2Id=237)
+    - Servisni delovi (category2Id=241)
+    - Sitni delovi (category2Id=250)
+    - V-Brake (category2Id=282)
+
+  Category: Lančanici (categoryId=67)
+    - Kasetni lančanik 10 brzina (category2Id=58)
+    - Kasetni lančanik 11 brzina (category2Id=59)
+    - Kasetni lančanik 12 brzina (category2Id=337)
+    - Kasetni lančanik 7 brzina (category2Id=60)
+    - Kasetni lančanik 8 brzina (category2Id=61)
+    - Kasetni lančanik 9 brzina (category2Id=62)
+    - MTB 12 Speed (category2Id=335)
+    - MTB 9 brzina (category2Id=168)
+    - Lančanik navojni 6 brzina (category2Id=175)
+    - Lančanik navojni 7 brzina (category2Id=176)
+    - Servisni delovi (category2Id=241)
+    - Single Freewheel (category2Id=246)
+    - Single lančanik (category2Id=248)
+
+  Category: Lanci (categoryId=17)
+    - 10 brzina (category2Id=2)
+    - 11 brzina (category2Id=3)
+    - 12 brzina (category2Id=334)
+    - 6/7/8 brzina (category2Id=19)
+    - 9 brzina (category2Id=26)
+    - Pin za lanac (category2Id=77)
+    - MTB (category2Id=120)
+    - Single Speed (category2Id=247)
+
+  Category: Menjači prednji (categoryId=29)
+    - Šelna menjača (category2Id=70)
+    - Gravel (category2Id=352)
+    - Gravel Brazed-On (category2Id=344)
+    - MTB / montaža na šelnu (category2Id=170)
+    - MTB / direktna montaža na ram (category2Id=172)
+    - MTB E-Type (category2Id=173)
+    - Road / montaža na šelnu (category2Id=231)
+    - Road / Bez šelne (category2Id=232)
+    - Servisni delovi (category2Id=241)
+    - Sitni delovi (category2Id=250)
+    - Trekking Band Type (category2Id=308)
+    - Trekking E-Type (category2Id=309)
+
+  Category: Menjači zadnji (categoryId=53)
+    - Zatezači lanaca (category2Id=63)
+    - Gravel (category2Id=352)
+    - Gravel 10 Speed (category2Id=350)
+    - Gravel 11 Speed (category2Id=345)
+    - MTB 10 brzina (category2Id=121)
+    - MTB 11 brzina (category2Id=124)
+    - MTB 12 Speed (category2Id=335)
+    - MTB 6 brzina (category2Id=158)
+    - MTB 6/7 brzina (category2Id=159)
+    - MTB 7/8 brzina (category2Id=163)
+    - MTB 9 brzina (category2Id=168)
+    - Rolnice mjenjača (category2Id=184)
+    - Road 10 brzina (category2Id=194)
+    - Road 11 brzina (category2Id=198)
+    - Road 12 speed (category2Id=357)
+    - Road 7 brzina (category2Id=220)
+    - Road 8 brzina (category2Id=223)
+    - Road 9 brzina (category2Id=227)
+    - Servisni delovi (category2Id=241)
+    - Sitni delovi (category2Id=250)
+    - Trekking 10 brzina (category2Id=266)
+    - Trekking 9 brzina (category2Id=276)
+
+  Category: MTB (categoryId=49)
+    - MTB 3 brzine (category2Id=133)
+
+  Category: Nable / glavčine prednje (categoryId=30)
+    - City/Trekking (category2Id=69)
+    - Dynamo nabla 6V/1.5W (category2Id=94)
+    - Dynamo nabla 6V/2.4W (category2Id=90)
+    - Dynamo nabla 6V/3.0W (category2Id=91)
+    - Dynamo nabla 6V/3.0W 6-Bolt (category2Id=92)
+    - Dynamo nabla 6V/3.0W CL (category2Id=93)
+    - Nable / glavčine (category2Id=298)
+    - MTB (category2Id=120)
+    - MTB 6-Bolt (category2Id=160)
+    - MTB Center Lock (category2Id=171)
+    - Road (category2Id=193)
+    - Servisni delovi (category2Id=241)
+    - Sitni delovi (category2Id=250)
+
+  Category: Nable / glavčine zadnje (categoryId=54)
+    - City/Trekking (category2Id=69)
+    - Coaster kočnica (category2Id=75)
+    - Nable / glavčine (category2Id=298)
+    - MTB (category2Id=120)
+    - MTB 12 Speed (category2Id=335)
+    - MTB 6-Bolt (category2Id=160)
+    - MTB Center Lock (category2Id=171)
+    - Road (category2Id=193)
+    - Road Center Lock (category2Id=233)
+    - Roller (category2Id=235)
+    - Servisni delovi (category2Id=241)
+
+  Category: Nable sa unutrašnjim brzinama (categoryId=39)
+    - 11 brzina Center Lock (category2Id=4)
+    - 3 brzine (category2Id=17)
+    - 3 Speed Center Lock (category2Id=322)
+    - 3 brzine Coaster (category2Id=18)
+    - 5 Speed Coaster (category2Id=356)
+    - 7 brzina (category2Id=311)
+    - 7 brzina Coaster (category2Id=20)
+    - 8 brzina (category2Id=23)
+    - 8 brzina Center Lock (category2Id=24)
+    - 8 brzina Coaster (category2Id=25)
+    - Auto-D (category2Id=38)
+    - Servisni delovi (category2Id=241)
+    - Sitni delovi (category2Id=250)
+    - Lančanici (category2Id=255)
+
+  Category: Pogoni (categoryId=18)
+    - Alfine/Nexus 33T (category2Id=31)
+    - Alfine/Nexus 38T (category2Id=32)
+    - Alfine/Nexus 39T (category2Id=33)
+    - Alfine/Nexus 42T (category2Id=34)
+    - Alfine/Nexus 45T (category2Id=35)
+    - Lančanici pogona (category2Id=64)
+    - Kurble (category2Id=78)
+    - Pogoni (category2Id=79)
+    - Zaštita od lanca (category2Id=102)
+    - Gravel (category2Id=352)
+    - Gravel 40T (category2Id=342)
+    - Gravel 42T (category2Id=355)
+    - Gravel 46X30T (category2Id=343)
+    - Gravel 48X31T (category2Id=349)
+    - MTB (category2Id=120)
+    - MTB 12 Speed (category2Id=335)
+    - MTB 30T (category2Id=336)
+    - MTB 32T (category2Id=315)
+    - MTB 34T (category2Id=135)
+    - MTB 34X24T (category2Id=136)
+    - MTB 36T (category2Id=137)
+    - MTB 36X22T (category2Id=138)
+    - >>
+    - MTB 36X26T (category2Id=139)
+    - MTB 38X24T (category2Id=141)
+    - MTB 38X26T (category2Id=142)
+    - MTB 38X28T (category2Id=143)
+    - MTB 40X28T (category2Id=144)
+    - MTB 40X30X22T (category2Id=145)
+    - MTB 40X36T (category2Id=341)
+    - MTB 42T (category2Id=146)
+    - MTB 42X32X22T (category2Id=148)
+    - MTB 42X34X24T (category2Id=150)
+    - MTB 44X32X22T (category2Id=152)
+    - MTB 44X32X24T (category2Id=153)
+    - MTB 46X30T (category2Id=354)
+    - MTB 48X36X26T (category2Id=155)
+    - MTB 48X38X28T (category2Id=156)
+    - MTB bez lančanika (category2Id=174)
+    - Road 11 brzina (category2Id=198)
+    - Road 42T (category2Id=305)
+    - Road 46X32T (category2Id=205)
+    - Road 46X34T (category2Id=206)
+    - Road 46X36T (category2Id=207)
+    - Road 48x34T (category2Id=338)
+    - >>
+    - Road 50X34T (category2Id=208)
+    - Road 50X39X30T (category2Id=210)
+    - Road 52X36T (category2Id=211)
+    - Road 52X39T (category2Id=213)
+    - Road 52X39X30T (category2Id=214)
+    - Road 52X42X30T (category2Id=215)
+    - Road 53X39T (category2Id=216)
+    - Road 54X40T (category2Id=359)
+    - Road 55X42T (category2Id=219)
+    - Road bez lančanika (category2Id=234)
+    - Servisni delovi (category2Id=241)
+    - Trekking 44X32X22T (category2Id=313)
+    - Trekking 44X32X24T (category2Id=331)
+    - Trekking 48X36X26T (category2Id=312)
+
+  Category: Ručice kočnica (categoryId=13)
+    - Cantilever/Roller (category2Id=55)
+    - Cantilever (category2Id=56)
+    - Hidraulične (category2Id=109)
+    - MTB (category2Id=120)
+    - Road (category2Id=193)
+    - Servisni delovi (category2Id=241)
+    - V-Brake (category2Id=282)
+
+  Category: Ručice menjača (categoryId=62)
+    - Alfine 11 brzina (category2Id=28)
+    - Alfine 2 brzine (category2Id=29)
+    - Alfine 8 brzina (category2Id=30)
+    - Integracioni modul (category2Id=112)
+    - MTB 10 brzina (category2Id=121)
+    - MTB 10X2/3 brzine (category2Id=122)
+    - MTB 10X3 brzine (category2Id=123)
+    - MTB 11 brzina (category2Id=124)
+    - MTB 11X2/3 brzine (category2Id=125)
+    - MTB 12 Speed (category2Id=335)
+    - MTB 2 Speed (category2Id=351)
+    - MTB 2/3 brzine (category2Id=126)
+    - MTB 3 brzine (category2Id=133)
+    - MTB 6 brzina (category2Id=158)
+    - MTB 6X3 brzina (category2Id=161)
+    - MTB 7 brzina (category2Id=162)
+    - MTB 7X3 brzina (category2Id=164)
+    - MTB 8 brzina (category2Id=165)
+    - MTB 8X3 brzina (category2Id=167)
+    - MTB 9 brzina (category2Id=168)
+    - MTB 9X2 Speed (category2Id=316)
+    - MTB 9X3 brzina (category2Id=169)
+    - >>
+    - Nexus 3 brzine (category2Id=177)
+    - Nexus 5 Speed (category2Id=360)
+    - Nexus 7 brzina (category2Id=178)
+    - Nexus 8 brzina (category2Id=179)
+    - Road 10 brzina (category2Id=194)
+    - Road 10X2 brzine (category2Id=195)
+    - Road 10X2/3 brzine (category2Id=196)
+    - Road 10X3 brzine (category2Id=197)
+    - Road 11X2 brzine (category2Id=199)
+    - Road 11X2/3 brzine (category2Id=200)
+    - Road 11x3 Speed (category2Id=306)
+    - Road 2 brzine (category2Id=201)
+    - Road 2/3 brzine (category2Id=202)
+    - Road 3 brzine (category2Id=203)
+    - Road 7 brzina (category2Id=220)
+    - Road 8 brzina (category2Id=223)
+    - Road 8X2 brzine (category2Id=224)
+    - Road 8X2/3 brzine (category2Id=225)
+    - Road 8X3 brzine (category2Id=226)
+    - Road 9 brzina (category2Id=227)
+    - Road 9X2 brzine (category2Id=228)
+    - Road 9X2/3 brzine (category2Id=229)
+    - >>
+    - Road 9X3 brzine (category2Id=230)
+    - Servisni delovi (category2Id=241)
+    - Trekking 10 brzina (category2Id=266)
+    - Trekking 10X3 brzine (category2Id=267)
+    - Trekking 2 brzine (category2Id=268)
+    - Trekking 3 brzine (category2Id=269)
+
+  Category: Ručice menjača/kočnica (categoryId=63)
+    - Gravel (category2Id=352)
+    - Gravel 10 Speed (category2Id=350)
+    - Gravel 11 Speed (category2Id=345)
+    - Gravel 2 Speed (category2Id=346)
+    - Hydraulic Assembled Road ST/BR (category2Id=321)
+    - MTB 2 Speed (category2Id=351)
+    - MTB 3 brzine (category2Id=133)
+    - MTB 6 brzina (category2Id=158)
+    - MTB 6X3 brzina (category2Id=161)
+    - MTB 7 brzina (category2Id=162)
+    - MTB 7X3 brzina (category2Id=164)
+    - MTB 8 brzina (category2Id=165)
+    - MTB 8X3 brzina (category2Id=167)
+    - MTB 9 brzina (category2Id=168)
+    - MTB 9X3 brzina (category2Id=169)
+    - Nexus 8 brzina (category2Id=179)
+    - Road 10 brzina (category2Id=194)
+    - Road 10X2 brzine (category2Id=195)
+    - Road 10X3 brzine (category2Id=197)
+    - Road 11 brzina (category2Id=198)
+    - Road 11X2 brzine (category2Id=199)
+    - Road 12 speed (category2Id=357)
+    - >>
+    - Road 12X2 Speed (category2Id=358)
+    - Road 2 brzine (category2Id=201)
+    - Road 2/3 brzine (category2Id=202)
+    - Road 3 brzine (category2Id=203)
+    - Road 7 brzina (category2Id=220)
+    - Road 7X2 brzine (category2Id=221)
+    - Road 7X3 brzine (category2Id=222)
+    - Road 8 brzina (category2Id=223)
+    - Road 8X2 brzine (category2Id=224)
+    - Road 8X3 brzine (category2Id=226)
+    - Road 9 brzina (category2Id=227)
+    - Road 9X2 brzine (category2Id=228)
+    - Road 9X3 brzine (category2Id=230)
+    - Servisni delovi (category2Id=241)
+    - Sitni delovi (category2Id=250)
+    - Trekking 3 brzine (category2Id=269)
+    - Trekking 8 brzina (category2Id=274)
+    - Trekking 9 brzina (category2Id=276)
+    - Trekking 9X3 brzine (category2Id=277)
+
+  Category: Servisni delovi (categoryId=61)
+    - 一 OSTALO (category2Id=287)
+
+  Category: Srednje glave (categoryId=12)
+    - 2-Piece / Press-Fit (category2Id=42)
+    - Octalink (category2Id=180)
+    - Servisni delovi (category2Id=241)
+    - Četvrtka (category2Id=256)
+
+  Category: Točkovi (categoryId=73)
+    - Wheels Other (category2Id=310)
+
+  Category: 一 OSTALO (categoryId=75)
+    - Brzinomeri (category2Id=80)
+    - E-Thru Osovine (category2Id=97)
+    - Štitnik za žice (category2Id=253)
+
+============================================================
+Main Category: Ostali delovi (menuId=2)
+============================================================
+
+  Category: Biciklistički alat (categoryId=9)
+    - Srednje glave (category2Id=288)
+    - Alati (category2Id=261)
+
+  Category: Kočnice (categoryId=14)
+    - Sitni delovi (category2Id=250)
+
+  Category: MTB (categoryId=49)
+    - Šticne (category2Id=240)
+
+  Category: Nable / glavčine zadnje (categoryId=54)
+    - City/Trekking (category2Id=69)
+
+  Category: Pedale (categoryId=50)
+    - Pločice za pedale (category2Id=72)
+    - Flat (category2Id=99)
+    - Servisni delovi (category2Id=241)
+    - SPD (category2Id=251)
+    - SPD-SL (category2Id=252)
+
+  Category: Spoljašnje gume (categoryId=6)
+    - 10 inča (category2Id=1)
+    - 12 inča (category2Id=5)
+    - 14 inča (category2Id=6)
+    - 16 inča (category2Id=7)
+    - 18 inča (category2Id=8)
+    - 20 inča (category2Id=9)
+    - 22 inča (category2Id=10)
+    - 24 inča (category2Id=11)
+    - 26 inča (category2Id=12)
+    - 27 inča (category2Id=13)
+    - 27.5 inča (category2Id=14)
+    - 28 inča (category2Id=15)
+    - 29 inča (category2Id=16)
+    - 700C (category2Id=21)
+    - 8 inča (category2Id=22)
+
+  Category: Točkovi (categoryId=73)
+    - Traka za felnu (category2Id=191)
+    - Felne (category2Id=192)
+    - Servisni delovi (category2Id=241)
+    - Žice (category2Id=254)
+    - Nalepnice (category2Id=257)
+    - Wheels Gravel (category2Id=347)
+    - Točkovi MTB (category2Id=283)
+    - Točkovi Road (category2Id=284)
+    - Točkovi Trekking (category2Id=285)
+
+  Category: Unutrašnje gume (categoryId=7)
+    - 10 inča (category2Id=1)
+    - 12 inča (category2Id=5)
+    - 14 inča (category2Id=6)
+    - 16 inča (category2Id=7)
+    - 18 inča (category2Id=8)
+    - 20 inča (category2Id=9)
+    - 22 inča (category2Id=10)
+    - 24 inča (category2Id=11)
+    - 26 inča (category2Id=12)
+    - 27 inča (category2Id=13)
+    - 27.5 inča (category2Id=14)
+    - 28 inča (category2Id=15)
+    - 29 inča (category2Id=16)
+    - 700C (category2Id=21)
+    - 8 inča (category2Id=22)
+
+  Category: Viljuške-Zadnja suspenzija (categoryId=27)
+    - Viljuška kruta (category2Id=190)
+    - Servisni delovi (category2Id=241)
+
+  Category: Volani (categoryId=35)
+    - Gravel (category2Id=352)
+    - MTB (category2Id=120)
+    - Road (category2Id=193)
+
+============================================================
+Main Category: Dodatna oprema (menuId=3)
+============================================================
+
+  Category: Alati (categoryId=31)
+    - Dodaci (category2Id=27)
+
+  Category: Displejevi & Stalci (categoryId=24)
+    - Stalci za bicikle (category2Id=45)
+    - Displej (category2Id=245)
+    - 一 OSTALO (category2Id=287)
+
+  Category: Dodatna oprema (categoryId=1)
+    - 一 OSTALO (category2Id=287)
+
+  Category: Gripovi & Trake za volan (categoryId=34)
+    - Gripovi (category2Id=105)
+    - Trake za volan (category2Id=106)
+    - Servisni delovi (category2Id=241)
+
+  Category: Hidratacija (categoryId=38)
+    - Dodaci (category2Id=27)
+    - Bidoni (category2Id=51)
+
+  Category: Lubrikanti / ulja za hidrauliku (categoryId=48)
+    - Bicikl (category2Id=46)
+    - Čišćenje (category2Id=71)
+    - Disk kočnica (category2Id=83)
+    - 一 OSTALO (category2Id=287)
+
+  Category: Pumpe (categoryId=52)
+    - CO2 (category2Id=74)
+    - Pumpe nožne (category2Id=100)
+    - Pumpe mini (category2Id=117)
+    - Servisni delovi (category2Id=241)
+    - 一 OSTALO (category2Id=287)
+
+  Category: Servisni delovi (categoryId=61)
+    - Pločice disk kočnice (category2Id=86)
+
+  Category: Torbe (categoryId=3)
+    - Ranci (category2Id=39)
+    - Torbe biciklističke (category2Id=43)
+    - Torbice ispod sedišta (category2Id=238)
+    - Torbe transportne (category2Id=264)
+
+  Category: 一 OSTALO (categoryId=75)
+    - Štitnici zadnje viljuške (category2Id=67)
+    - Kombinovana pakovanja (category2Id=76)
+    - Blatobrani (category2Id=98)
+    - Set za popravke (category2Id=181)
+    - Promo materijal (category2Id=183)
+    - Servisni delovi (category2Id=241)
+    - Ventili (category2Id=281)
+    - 一 OSTALO (category2Id=287)
+
+============================================================
+Main Category: Obuća (menuId=4)
+============================================================
+
+  Category: Biciklistička obuća (categoryId=20)
+    - BMX (category2Id=48)
+    - Indoor (category2Id=111)
+    - MTB (category2Id=120)
+    - Road (category2Id=193)
+    - Sandale (category2Id=239)
+    - Servisni delovi (category2Id=241)
+    - Touring (category2Id=262)
+    - Triatlon (category2Id=279)
+    - Urban (category2Id=280)
+
+============================================================
+Main Category: Odeća (menuId=5)
+============================================================
+
+  Category: Biciklistička obuća (categoryId=20)
+    - MTB (category2Id=120)
+
+  Category: Urban (categoryId=72)
+    - Muške (category2Id=325)
+
+============================================================
+Main Category: Naočare (menuId=6)
+============================================================
+
+============================================================
+Main Category: Kacige (menuId=7)
+============================================================
+
+============================================================
+Main Category: Bicikli & Ramovi (menuId=8)
+============================================================
+
+============================================================
+Main Category: Alati (menuId=9)
+============================================================
+
+  Category: Biciklistički alat (categoryId=9)
+    - Srednje glave (category2Id=288)
+    - Kočnice & Ručice (category2Id=289)
+    - Kasetni lančanik (category2Id=290)
+    - Lanac (category2Id=291)
+    - Di2 (category2Id=292)
+    - E-bike (category2Id=302)
+    - Ramovi i Viljuške (category2Id=293)
+    - Prednji pogon (category2Id=294)
+    - Menjač prednji (category2Id=295)
+    - Uopšteno (category2Id=296)
+    - Ležaj viljuške (category2Id=297)
+    - Nable / glavčine (category2Id=298)
+    - Pedale (category2Id=299)
+    - Menjač zadnji (category2Id=300)
+    - Felne & Žice (category2Id=301)
+    - Alatni setovi (category2Id=303)
+    - Alati (category2Id=261)
+
+  Category: Kočnice (categoryId=14)
+    - Alatni setovi (category2Id=303)
+
+  Category: Pumpe (categoryId=52)
+    - Pumpe nožne (category2Id=100)
+    - Pumpe mini (category2Id=117)
+
+
+============================================================
+Menu structure saved to: filters-temp/menu-structure.json
+============================================================
+
+
+SUMMARY:
+============================================================
+Pogonski delovi
+  - 20 categories
+  - 310 subcategories
+
+Ostali delovi
+  - 10 categories
+  - 54 subcategories
+
+Dodatna oprema
+  - 10 categories
+  - 32 subcategories
+
+Obuća
+  - 1 categories
+  - 9 subcategories
+
+Odeća
+  - 2 categories
+  - 2 subcategories
+
+Naočare
+  - 0 categories
+  - 0 subcategories
+
+Kacige
+  - 0 categories
+  - 0 subcategories
+
+Bicikli & Ramovi
+  - 0 categories
+  - 0 subcategories
+
+Alati
+  - 3 categories
+  - 20 subcategories
+

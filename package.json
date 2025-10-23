@@ -1,0 +1,21 @@
+{
+  "name": "2un-jovanovic-bike-shop",
+  "version": "1.0.0",
+  "description": "Website for 2UN Jovanovic bike shop with XML product import",
+  "main": "index.html",
+  "scripts": {
+    "import": "node import-xml.js",
+    "serve": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "bike-shop",
+    "bicycle",
+    "parts",
+    "serbia"
+  ],
+  "author": "2UN Jovanovic",
+  "license": "ISC",
+  "dependencies": {
+    "xml2js": "^0.6.2"
+  }
+}

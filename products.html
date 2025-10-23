@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delovi - 2UN Jovanovic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div>
+                    <span>📞 067 708 6710</span>
+                    <span style="margin-left: 1.5rem;">📧 unjovanovic@gmail.com</span>
+                </div>
+                <div>
+                    <span>Pon-Pet: 09:00-19:00 | Sub: 09:00-15:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo/logo veci.jpg" alt="2UN Jovanovic">
+                    </a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="products.html" class="active">Delovi</a></li>
+                    <li><a href="tires.html">Gume i Točkovi</a></li>
+                    <li><a href="services.html">Servis</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                    <a href="basket.html" class="cart-icon">
+                        <i class="fas fa-shopping-basket"></i>
+                        <span id="basketCount" class="basket-count">0</span>
+                    </a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Biciklistički Delovi</h1>
+            <p>Visokokvalitetni delovi od vodećih proizvođača</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="container products-container">
+        <!-- Filters Sidebar -->
+        <aside class="filters-sidebar">
+            <div class="filter-group">
+                <h3>Pretraga</h3>
+                <input type="text" id="searchInput" placeholder="Traži po nazivu ili šifri...">
+            </div>
+
+            <div class="filter-group">
+                <h3>Proizvođač</h3>
+                <select id="brandFilter">
+                    <option value="all">Svi brendovi</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <h3>Odeljak</h3>
+                <select id="odeljakFilter">
+                    <option value="all">Svi odeljci</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <h3>Kategorija</h3>
+                <select id="kategorijaFilter">
+                    <option value="all">Sve kategorije</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <h3>Potkategorija</h3>
+                <select id="potkategorijaFilter">
+                    <option value="all">Sve potkategorije</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <h3>Dostupnost</h3>
+                <label>
+                    <input type="checkbox" id="stockFilter">
+                    Samo na stanju
+                </label>
+            </div>
+
+            <div class="filter-group">
+                <h3>Sortiranje</h3>
+                <select id="sortSelect">
+                    <option value="default">Podrazumevano</option>
+                    <option value="price-asc">Cena: Niska → Visoka</option>
+                    <option value="price-desc">Cena: Visoka → Niska</option>
+                    <option value="name-asc">Ime: A → Z</option>
+                </select>
+            </div>
+        </aside>
+
+        <!-- Products Grid -->
+        <div class="products-main">
+            <div class="products-header">
+                <h2 id="productCount">Svi proizvodi</h2>
+            </div>
+            <div id="productsGrid" class="products-grid">
+                <div class="loading">Učitavanje proizvoda...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>2UN Jovanovic</h4>
+                    <p>Vaš pouzdan partner za biciklističke delove i servis u Pirotu.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Linkovi</h4>
+                    <ul>
+                        <li><a href="index.html">Početna</a></li>
+                        <li><a href="products.html">Delovi</a></li>
+                        <li><a href="services.html">Servis</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 067 708 6710</li>
+                        <li><i class="fas fa-envelope"></i> unjovanovic@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 7 Juli br 16, Pirot</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 2UN Jovanovic. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/basket.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

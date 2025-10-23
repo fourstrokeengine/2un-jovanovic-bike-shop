@@ -1,0 +1,1113 @@
+:root {
+  --navbar_white_bg: #ffffff;
+  --navbar_second_blue_bg: #ecf0f1;
+  --box_blue_bg: #80ccff;
+  --navbar_active_bg: #babdb6;
+  --navbar_hover_bg: #d3d7cf;
+  --htmlBody_bg: #ffffff;
+}
+
+* {
+/*	it uses the first font from the left and gets next font if it can not be found */
+	font-family: Arial, Calibri, Candara, Segoe, 'Segoe UI', Optima, sans-serif;
+	font-size: 10pt;
+/* 	font-style: normal;
+	font-variant: normal;
+	font-weight: 500; */
+	line-height: 1.1;
+/*     font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100% */
+}
+/* html {
+     font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100% 
+} */
+.h1,h1{
+    font-family: Arial;
+	font-size: 16pt;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+.h2,h2{
+    font-family: Arial;
+	font-size: 14.5pt;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+.h3,h3{
+    font-family: Arial;
+	font-size: 13pt;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+.h4,h4 {
+    font-family: Arial;
+	font-size: 11.5pt;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+.h5,h5 {
+    font-family: Arial;
+	font-size: 10pt;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+.h6,h6 {
+    font-family: Arial;
+	font-size: 9pt;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+.h7,h7{
+	/*it is as h3 but with line-height: 50%*/
+    font-family: Arial;
+	font-size: 13pt;
+    font-weight: 500;
+    line-height: 50%;
+    color: inherit;
+}
+
+.h3b,h3b{
+    font-family: Arial;
+	font-size: 13pt;
+    font-weight: 1000;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.container {
+   /*  width: 85%; */
+}
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12,
+    .col-lg-13,
+    .col-lg-14,
+    .col-lg-15,
+    .col-lg-16,
+    .col-lg-18,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9 {
+        float: left;
+        padding: 0px 10px 0px;
+    }
+    .col-lg-2 {
+        width: 11.1111111111%
+    }
+    .col-lg-3 {
+        width: 16.6666666667%
+    }
+    .col-lg-4 {
+        width: 22.2222222222%
+    }
+    .col-lg-5 {
+        width: 27.7777777778%
+    }
+    .col-lg-6 {
+        width: 33.3333333333%
+    }
+    .col-lg-7 {
+        width: 38.8888888889%
+    }
+    .col-lg-8 {
+        width: 44.4444444444%
+    }
+    .col-lg-9 {
+        width: 50%
+    }
+    .col-lg-10 {
+        width: 55.5555555556%
+    }
+    .col-lg-11 {
+        width: 61.1111111111%
+    }
+    .col-lg-12 {
+        width: 66.6666666667%
+    }
+    .col-lg-13 {
+        width: 72.2222222222%
+    }
+    .col-lg-14 {
+        width: 77.7777777778%
+    }
+    .col-lg-15 {
+        width: 83.3333333333%
+    }
+    .col-lg-16 {
+        width: 88.8888888889%
+    }
+    .col-lg-18 {
+        width: 100%
+    }
+    .col-lg-pull-4 {
+        right: 22.2222222222%
+    }
+    .col-lg-push-14 {
+        left: 77.7777777778%
+    }
+    .col-lg-offset-1 {
+        margin-left: 5.5555555556%
+    }
+    .col-lg-offset-14 {
+        margin-left: 77.7777777778%
+    }
+    .visible-lg {
+        display: block!important
+    }
+#productBlock{
+width:100%;
+/* margin-left:auto; */
+margin-right:auto;
+}
+#search_panel{
+	/* background: transparent; */
+/*     background: #EBEDEE; */
+    background: #ffffff;
+    border: 1px solid #FFF;
+    border-top: 0;
+/*     padding: 12px 14px */
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto
+}
+.img-myResponsive {
+
+    max-width: 100%;
+    height: auto;
+    overflow-y: scroll;
+}
+#item_panel{
+	/* background: transparent; */
+/*     background: #EBEDEE; */
+    background: #ffffff; 
+    border: 1px solid #FFF;
+    border-top: 0;
+/*     padding: 12px 14px */
+}
+
+body,html {
+	/* Other non-webkit browsers */
+   /*  zoom: 0.8;  */
+    /* Webkit browsers */
+   /*  zoom: 80%;  */
+   /* with height: 100%; or less, some times the screen is flickering */
+height: 110%;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3dced+0,b3dced+100 */
+background: var(--htmlBody_bg); /* Old browsers */
+background: -moz-linear-gradient(top,  var(--htmlBody_bg) 0%, var(--htmlBody_bg) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  var(--htmlBody_bg) 0%,var(--htmlBody_bg) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  var(--htmlBody_bg) 0%,var(--htmlBody_bg) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+.footer {
+	position: absolute;
+    bottom: -50px;
+    width: 100%;
+   /*  position: fixed;
+    left:0px;
+    right:0px; */
+}
+#sidebar {
+    border: 2px solid #d5edf5;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px
+}
+#sidebarPanel {
+    border: 2px solid #96d7ed;
+ /*    background: transparent; */
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px
+}
+.text-price .text-currency {
+    font-size: .7em;
+    margin-right: .3em
+}
+.text-price .text-price-after {
+    font-size: .7em;
+    position: absolute;
+    top: -.3em
+}
+
+.box-product-list-item-small .text-price {
+    font-size: 14px;/*24*/
+    white-space: nowrap
+}
+.box-footer {
+    background: #3AA9DE; /*DEECF7*/
+    border: 1px solid #FFF;
+    border-top: 0;
+    padding: 10px 10px 10px 10px;
+    margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 15px;
+	height: 100%;
+}
+.box-footerNew {
+    background: var(--box_blue_bg); /*DEECF7*/
+    border: 1px solid #FFF;
+    border-top: 0;
+    padding: 10px 10px 25px 10px;
+    margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 15px;
+	height: 100%;
+}
+
+.box-descr {
+    border-top: 0;
+    height: 30px;
+    margin-bottom: 10px;
+    overflow: auto;
+/*     overflow: hidden; */
+/*     text-overflow: ellipsis; */
+ }
+.last,
+.text-last {
+    margin-bottom: 0
+}
+/* .row {
+    margin-left: -4px;
+    margin-right: -4px
+} */
+.box-padding {
+    background: #FFF;
+    padding: 16px 
+    
+}
+.box-product-list-item-small a {
+    color: #000000;
+/*     text-decoration: none */
+}
+.box-product-list-item-small {
+    background: #FFF;
+    margin-bottom: 8px
+}
+.box-header-banner-gift-idea .text-wrapper .text-title {
+    color: #E10000;
+    display: block;
+    font-size: 3em;
+    font-weight: 700
+}
+.text-first {
+    margin-top: 0;
+    padding-top: 0
+}
+.list-product>li .h4,
+.list-product>li .h5 {
+    margin-top: 200px;
+}
+.box-product-item-thumpnail img {
+    margin-top: 0px;
+    max-height: 35px
+}
+.box-product-list-item-small .box-image-product-small img {
+   margin-top: 0px;
+/*     max-height: 210px;  
+    max-width: 210px; */
+   max-width: 100%;
+   max-height: 100%;
+}
+.box-product-list-item-big .box-image-product-big img {
+/*     margin: 0 auto; */
+    max-width: 0;
+    max-height: 600px;
+}
+.panel-body {
+    /*padding: 0px 15px 15px 15px;*/
+ 	/* padding: 30px; */
+ 	padding: 10px 30px 15px 30px;
+}
+.table-bordered {
+    border: 1px solid #f2f2f8;
+}
+.panel {
+    border: 3px solid #f2f2f8;
+/*     background-color: #e1e9f2; */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f6f6+0,e3e4ea+18,e3e6ef+55,e5e7ea+80,eaeaea+100 */
+background: rgb(245,246,246); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(245,246,246,1) 0%, rgba(227,228,234,1) 18%, rgba(227,230,239,1) 55%, rgba(229,231,234,1) 80%, rgba(234,234,234,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(245,246,246,1) 0%,rgba(227,228,234,1) 18%,rgba(227,230,239,1) 55%,rgba(229,231,234,1) 80%,rgba(234,234,234,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(245,246,246,1) 0%,rgba(227,228,234,1) 18%,rgba(227,230,239,1) 55%,rgba(229,231,234,1) 80%,rgba(234,234,234,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#eaeaea',GradientType=1 ); /* IE6-9 */
+    
+}
+.modal-header {
+/*     background-color: #eff4f8; */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e0f3fa+0,d1ecf9+50,c3e5f4+51,b6dffd+100 */
+background: rgb(224,243,250); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(224,243,250,1) 0%, rgba(209,236,249,1) 50%, rgba(195,229,244,1) 51%, rgba(182,223,253,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(224,243,250,1) 0%,rgba(209,236,249,1) 50%,rgba(195,229,244,1) 51%,rgba(182,223,253,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(224,243,250,1) 0%,rgba(209,236,249,1) 50%,rgba(195,229,244,1) 51%,rgba(182,223,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=0 ); /* IE6-9 */
+
+}
+.modal-footer {
+/*     background-color: #eff4f8; */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f5f6+0,e3eaed+47,c8d7dc+100 */
+background: rgb(242,245,246); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(242,245,246,1) 0%, rgba(227,234,237,1) 47%, rgba(200,215,220,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 47%,rgba(200,215,220,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 47%,rgba(200,215,220,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-9 */
+
+}
+.modal-body {
+	background-color: #f2fbfe;
+}
+table{
+    table-layout: fixed;
+}
+.hideText{
+	text-overflow:ellipsis;
+	overflow:hidden;
+	word-wrap:normal;
+	white-space: nowrap;
+}
+.box-attributes {
+	white-space: nowrap;
+    overflow: auto;    
+}
+.box-stock {
+    background: #3AA9DE; /*DEECF7*/
+    border: 1px solid #FFF;
+    border-top: 0;
+    padding: 7px 1px;
+    height: 50px;
+}
+
+.box-stockNew {
+    background: var(--box_blue_bg); /*DEECF7*/
+    border: 1px solid #FFF;
+    border-top: 0;
+    padding: 7px 1px;
+    height: 65px;
+}
+.box-alternative {
+    background: #f0f3f5; /*DEECF7*/
+    border: 1px solid #FFF;
+    border-top: 0;
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+	height: 100%;
+}
+
+.box-generic {
+    background: #3AA9DE; /*DEECF7*/
+    border: 1px solid #FFF;
+    border-top: 0;
+    padding: 10px 1px
+}
+/* @media (min-width: 992px)
+.modal-lg
+{
+    width: 900px;
+    height: 900px; control height here
+} */
+
+.fadeOutbox, .fadeInbox, .fadeTobox{
+/* 	float:left;
+	padding:8px;
+	margin:16px;
+	border:1px solid red;
+	width:200px;
+	height:50px;
+	background-color:#000000;
+	color:white; */
+}
+.clear{
+	clear:both;
+}
+.select2-container .select2-selection--single {
+	height:34px;
+	line-height:28px;
+}
+.select2-container--classic .select2-selection--single .select2-selection__arrow {
+    height: 32px;
+}
+.tdWrap {
+	word-wrap:break-word
+}
+
+.nav-tabs > li > a, .nav-tabs > li > img{
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid;
+    border-radius: 4px 4px 0 0;
+}
+.nav-tabs {
+    border-bottom: 1px solid #a4b4cf;
+}
+.cursor-wait {
+    cursor: wait !important;
+}
+.table-striped tbody tr.highlight td { 
+/*     select table row */
+    background-color: #c4dde7;
+}
+.table-striped th { 
+/*     select table row */
+/*     background-color: #a6d1e3; */
+    
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#deefff+0,9acce0+100 */
+background: #deefff; /* Old browsers */
+background: -moz-linear-gradient(top,  #deefff 0%, #9acce0 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #deefff 0%,#9acce0 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #deefff 0%,#9acce0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#deefff', endColorstr='#9acce0',GradientType=0 ); /* IE6-9 */
+    
+}
+.table-striped > tbody > tr:nth-of-type(2n+2) {
+    background-color: #eef6fa;
+}
+/* cart icon */
+.cart_anchor{ float:right; vertical-align:top; background: no-repeat center center / 100% auto;width: 100px;height: 0px; margin-bottom: 0px;
+}
+
+.carousel-control.left {
+	background-image: inherit;
+}
+.carousel-control.right {
+	background-image: inherit;
+}
+
+.pageTop,.pageBottom {
+	margin-left: 15px;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+.left-col {
+    display: inline-block;
+    width: 584px;
+}
+.right-col {
+    display: inline-block;
+    width: 200px;
+}
+.rectangle {
+	border: 1px dotted rgb(0, 0, 0);
+	display: block;
+	margin: 10px;
+	background-color: #eef6fa;
+
+}
+/* for dispay product list */
+#img_container {
+   width: 210px;
+   height: 190px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+ }
+
+#img_container img {
+  display: inline;
+}
+
+/* for dispay product list */
+#brandImg_container {
+   width: 310px;
+   height: 310px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+ }
+
+#brandImg_container img {
+  display: inline;
+}
+
+
+.hide-bullets {
+list-style:none;
+margin-left: -40px;
+margin-top:20px;
+}
+/* salvatore */
+
+#grid[data-columns]::before {
+	content: '3 .column.size-1of3';
+}
+
+/* These are the classes that are going to be applied: */
+.column { float: left; }
+.size-1of3 { width: 33.333%; }
+.size-1of2 { width: 50%; }
+.size-1of1 { width: 100%; }
+
+/*  .navbar {
+margin-bottom: 0px; 
+  background-color: #47c6ff;
+} */
+
+
+
+
+.navbar {
+  margin-bottom: 0px;  
+  background-color: var(--navbar_white_bg);
+  border-color: #b7cdea;
+}
+.navbar .navbar-brand {
+  color: #000000;
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: #0b0b0b;
+}
+.navbar .navbar-text {
+  color: #000000;
+}
+.navbar .navbar-nav > li > a, .navbar-nav > li > img{
+  color: #000000;
+}
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus,
+.navbar .navbar-nav > li > img:hover,
+.navbar .navbar-nav > li > img:focus {
+  color: #0b0b0b;
+  background-color: var(--navbar_hover_bg);
+}
+/* =============== DROPDOWN MENY BEGIN ================ */
+/* .navbar .navbar-nav > li > .dropdown-menu {
+  background-color: #c2e6fe;
+}
+.navbar .navbar-nav > li > .dropdown-menu > li > a {
+  color: #000000;
+}
+.navbar .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #0b0b0b;
+  background-color: #b7cdea;
+}  #b7cdea;
+.navbar .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #edf2f9;
+}
+.navbar .navbar-nav .open .dropdown-menu > .active > a,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #0b0b0b;
+  background-color: #b7cdea;
+} */
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: var(--navbar_active_bg);
+  outline: 0;
+}
+
+.dropdown-menu > li > a:focus, 
+.dropdown-menu > li > a:hover {
+  color: #0b0b0b;
+  background-color: var(--navbar_hover_bg);
+}
+
+/* =============== DROPDOWN MENY END ================ */
+
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+  color: #0b0b0b;
+  background-color: var(--navbar_hover_bg);
+}
+.navbar .navbar-nav > .open > a,
+.navbar .navbar-nav > .open > a:hover,
+.navbar .navbar-nav > .open > a:focus {
+  color: #0b0b0b;
+  background-color: var(--navbar_white_bg);
+}
+.navbar .navbar-toggle {
+  border-color: #b7cdea;
+}
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+  background-color: #b7cdea;
+}
+.navbar .navbar-toggle .icon-bar {
+  background-color: #000000;
+}
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+  border-color: #000000;
+}
+.navbar .navbar-link {
+  color: #000000;
+}
+.navbar .navbar-link:hover {
+  color: #0b0b0b;
+}
+
+@media (max-width: 767px) {
+  .navbar .navbar-nav .open .dropdown-menu > li > a {
+    color: #000000;
+  }
+  .navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #0b0b0b;
+  }
+  .navbar .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #0b0b0b;
+  background-color: var(--navbar_white_bg);
+  }
+
+}
+
+
+
+
+
+/* ======================== */
+
+/*make the menu sub-menu items drop down on mouse hover */
+ul.nav li.dropdown:hover > ul.dropdown-menu{
+    display: block;
+    margin: 0;
+}
+/* ======================== */
+
+.navbar-second {
+/*   background-color: #566ff0; */
+/*   border-color: #3399C9; */
+  background-color: #3AA9DE;
+  border-color: #3399C9;
+   
+}
+.navbar-second .navbar-brand {
+  color: var(--navbar_second_blue_bg);
+}
+.navbar-second .navbar-brand:hover,
+.navbar-second .navbar-brand:focus {
+  color: #eeeeec;
+}
+.navbar-second .navbar-text {
+  color: var(--navbar_second_blue_bg);
+}
+.navbar-second .navbar-nav > li > a {
+  color: var(--navbar_white_bg);
+  font-size: 10pt;
+}
+.navbar-second .navbar-nav > li > a:hover,
+.navbar-second .navbar-nav > li > a:focus {
+  color: #eeeeec;
+  background-color: #3399C9;
+}
+
+/* =============== DROPDOWN MENY BEGIN ================ */
+.dropdown-menu-second > li > a {
+  color: var(--navbar_white_bg);
+  background-color: #3AA9DE;
+  min-width: 300px;
+}
+.dropdown-menu-second > li > a:hover,
+.dropdown-menu-second > li > a:focus {
+	color: #eeeeec;
+	background-color: #3399C9
+} 
+
+.dropdown-menu-second > .active > a,
+.dropdown-menu-second > .active > a:hover,
+.dropdown-menu-second > .active > a:focus {
+	color: #eeeeec;
+	background-color: #3399C9
+}
+
+/* =============== DROPDOWN MENY END ================ */
+
+
+
+
+
+.navbar-second .navbar-nav > li > .dropdown-menu {
+  background-color: #3AA9DE;
+}
+.navbar-second .navbar-nav > li > .dropdown-menu > li > a {
+  color: var(--navbar_second_blue_bg);
+}
+.navbar-second .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-second .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #eeeeec;
+  background-color: #3399C9;
+}
+.navbar-second .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #3399C9;
+}
+.navbar-second .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-second .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-second .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #eeeeec;
+  background-color: #3399C9;
+}
+.navbar-second .navbar-nav > .active > a,
+.navbar-second .navbar-nav > .active > a:hover,
+.navbar-second .navbar-nav > .active > a:focus {
+  color: #eeeeec;
+  background-color: #3399C9;
+}
+.navbar-second .navbar-nav > .open > a,
+.navbar-second .navbar-nav > .open > a:hover,
+.navbar-second .navbar-nav > .open > a:focus {
+  color: #eeeeec;
+  background-color: #3399C9;
+}
+.navbar-second .navbar-toggle {
+  border-color: #3399C9;
+}
+.navbar-second .navbar-toggle:hover,
+.navbar-second .navbar-toggle:focus {
+  background-color: #3399C9;
+}
+.navbar-second .navbar-toggle .icon-bar {
+  background-color: var(--navbar_second_blue_bg);
+}
+.navbar-second .navbar-collapse,
+.navbar-second .navbar-form {
+  border-color: var(--navbar_second_blue_bg);
+}
+.navbar-second .navbar-link {
+  color: var(--navbar_second_blue_bg);
+}
+.navbar-second .navbar-link:hover {
+  color: #eeeeec;
+}
+
+@media (max-width: 767px) {
+  .navbar-second .navbar-nav .open .dropdown-menu > li > a {
+    color: var(--navbar_second_blue_bg);
+  }
+  .navbar-second .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-second .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #eeeeec;
+  }
+  .navbar-second .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-second .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-second .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #eeeeec;
+    background-color: #3399C9;
+  }
+}
+
+.dropdown-content {
+    position: relative;
+    z-index: 10000;
+}
+
+
+/* ============== Dropdown Button =================== */
+.dropbtn {
+    background-color: #3AA9DE;
+    color: white;
+    padding: 16px;
+    font-size: 10pt;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block; 
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3AA9DE;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+/* http://www.cssmatic.com/border-radius
+   The ultimate CSS tools for web designers */
+    border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	border: 0px solid #000000;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 5px 16px 5px 18px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	color: #eeeeec;
+	background-color: #3399C9
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	color: #eeeeec;
+    background-color: #3399C9;
+}
+
+
+/* ============================================ */
+#suggesstion-box {
+	position: absolute;
+}
+
+#newRProductCode.error {
+	background-color: #FC0;
+}
+
+div.suggestions {
+	background-color: #FFF;
+	padding: 2px 6px;
+	border: 1px solid #000;
+}
+
+div.suggestions:hover {
+	background-color: #69F;
+}
+/* ================================================== */
+label.checkbox-label input[type=checkbox]{
+    position: relative;
+    vertical-align: middle;
+    bottom: 2px;
+}
+
+col-sm-1_5
+{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 5px 5px; white-space: nowrap; overflow: hidden}
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: bold; color: #3399FF; }
+
+.autocomplete-suggestions{
+/* min-width: inherit; */
+/*  width:25% !important; */
+ width: auto !important;
+}    
+
+/* .autocomplete-suggestion { padding: 5px 5px; white-space: nowrap; overflow: hidden; font-size:22px} */
+
+/* input[type="date"]:hover::-webkit-calendar-picker-indicator {
+  color: red;
+}
+input[type="date"]:hover:after {
+  content: " Date Picker ";
+  color: #555;
+  padding-right: 5px;
+}
+input[type="date"]::-webkit-inner-spin-button {
+  display: none; <- Crashes Chrome on hover
+  -webkit-appearance: none;
+  margin: 0;
+} */
+.aboutBodyText
+{
+	tab-size: 8;
+	-moz-tab-size: 8;
+	-o-tab-size: 8;
+	font-size:16px;
+	background-color: transparent;
+	border-style: none;
+	line-height: 160%;
+}
+.aboutHeader
+{
+	font-size:16px;
+	font-weight: bold;
+}
+.aboutTrText
+{
+	height:30px;
+}
+.aboutTdText
+{
+	font-size:16px;
+	padding-right:25px;
+}
+/* blink animation */
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+
+dummydeclaration { padding-left: 4em; } /* Firefox ignores first declaration for some reason */
+tab1 { padding-left: 4em; }
+tab2 { padding-left: 8em; }
+tab3 { padding-left: 12em; }
+tab4 { padding-left: 16em; }
+tab5 { padding-left: 20em; }
+tab6 { padding-left: 24em; }
+tab7 { padding-left: 28em; }
+tab8 { padding-left: 32em; }
+tab9 { padding-left: 36em; }
+tab10 { padding-left: 40em; }
+tab11 { padding-left: 44em; }
+tab12 { padding-left: 48em; }
+tab13 { padding-left: 52em; }
+tab14 { padding-left: 56em; }
+tab15 { padding-left: 60em; }
+tab16 { padding-left: 64em; }
+
+.required:after { 
+	font-weight: bold;
+	font-size: 2em;
+	content:"*";
+	color: #e32;
+    display:inline; 
+ }
+ 
+ .linkIsDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.discountField {
+	color: red;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.myAlertRed {
+	color: #a94442;
+	background-color: #f2dede !important;
+	border-color: #ebccd1;
+}
+
+.myOOW {
+/* 	color: #a94442; */
+	background-color: #f2dede !important;
+	border-color: #ebccd1;
+}
+
+@-webkit-keyframes Font {
+/* 	100% {color: white; text-shadow: -0px 0 white, 0 0px white, 0px 0 white, 0 -0px white;} */
+    100% {color: white; text-shadow: -0px 0 white, 0 0px white, 0px 0 white, 0 -0px white;}
+    0% {color: red; text-shadow: -0px 0 red, 0 0px red, 0px 0 red, 0 -0px red;}
+}
+
+.textAnimation {
+  -webkit-animation:Font 2s infinite alternate;
+}
+
+.autoCompleteCSS {
+  border: 2px solid blue;
+  border-radius: 4px;
+}
+
+.comment_text{
+	white-space: pre-wrap;
+	font-size: 1.3em;
+	font-weight: 500;
+	background-color: GhostWhite;
+	border-style: inset;
+	border-width: 1px;
+	padding: 15px;
+}
+
+.myLabel{
+	padding-bottom: 5px;
+}
+.btn-radius {
+    border-radius: 10px !important;
+}
+@-webkit-keyframes AnimationName {
+    0%{
+        background-position:0% 31%
+    }
+    50%{
+        background-position:100% 70%
+    }
+    100%{
+        background-position:0% 31%
+    }
+}
+@-moz-keyframes AnimationName {
+    0%{
+        background-position:0% 31%
+    }
+    50%{
+        background-position:100% 70%
+    }
+    100%{
+        background-position:0% 31%
+    }
+}
+@keyframes AnimationName {
+    0%{
+        background-position:0% 31%
+    }
+    50%{
+        background-position:100% 70%
+    }
+    100%{
+        background-position:0% 31%
+    }
+}
+
+.btn-primary-anim {
+    background: #5a7ce2;
+    background: -moz-linear-gradient(-45deg, #5a7ce2 0%, #8283e8 50%, #5c5de8 51%, #565bd8 71%, #575cdb 100%);
+    background: -webkit-linear-gradient(-45deg, #5a7ce2 0%,#8283e8 50%,#5c5de8 51%,#565bd8 71%,#575cdb 100%);
+    background: linear-gradient(135deg, #5a7ce2 0%,#8283e8 50%,#5c5de8 51%,#565bd8 71%,#575cdb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a7ce2', endColorstr='#575cdb',GradientType=1 );
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+    border: medium none;
+    
+    animation-duration: 10s;
+}
+.btn-info-anim{
+    background: #01a8c1;
+    background: -moz-linear-gradient(-45deg, #01a8c1 0%, #2adbf7 50%, #00b5d1 51%, #0aafc9 71%, #0599b1 100%);
+    background: -webkit-linear-gradient(-45deg, #01a8c1 0%,#2adbf7 50%,#00b5d1 51%,#0aafc9 71%,#0599b1 100%);
+    background: linear-gradient(135deg, #01a8c1 0%,#2adbf7 50%,#00b5d1 51%,#0aafc9 71%,#0599b1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a8c1', endColorstr='#0599b1',GradientType=1 );
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+    border: medium none;   
+    
+    animation-duration: 10s;
+}

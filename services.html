@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servis - 2UN Jovanovic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .services-detail {
+            padding: 4rem 0;
+        }
+        .services-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+        .services-intro h2 {
+            font-size: 2rem;
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+        }
+        .services-list-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        .service-item {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        }
+        .service-item i {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+        .service-item h3 {
+            font-size: 1.5rem;
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+        }
+        .service-item ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .service-item ul li {
+            padding: 0.5rem 0;
+            color: var(--dark-gray);
+        }
+        .service-item ul li:before {
+            content: "✓ ";
+            color: var(--primary-blue);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        .pricing-note {
+            background-color: var(--light-blue);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .pricing-note h3 {
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+        }
+        .cta-section {
+            background-color: var(--light-gray);
+            padding: 3rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .cta-section h3 {
+            font-size: 1.8rem;
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo/logo veci.jpg" alt="2UN Jovanovic">
+                    </a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="products.html">Delovi</a></li>
+                    <li><a href="tires.html">Gume i Točkovi</a></li>
+                    <li><a href="services.html" class="active">Servis</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                    <a href="quote.html" class="cart-icon"><i class="fas fa-clipboard-list"></i></a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Bike Servis</h1>
+            <p>Profesionalno održavanje i popravka bicikala</p>
+        </div>
+    </section>
+
+    <!-- Services Detail -->
+    <section class="services-detail">
+        <div class="container">
+            <div class="services-intro">
+                <h2>Naše Usluge</h2>
+                <p>U 2UN Jovanovic nudimo kompletan spektar usluga za održavanje i popravku bicikala. Sa višegodišnjim iskustvom i stručnim pristupom, brinemo se da vaš bicikl uvek bude u najboljem stanju.</p>
+            </div>
+
+            <div class="services-list-section">
+                <div class="service-item">
+                    <i class="fas fa-wrench"></i>
+                    <h3>Osnovni Servis</h3>
+                    <ul>
+                        <li>Podešavanje menjača</li>
+                        <li>Podešavanje kočnica</li>
+                        <li>Provera i dotezanje</li>
+                        <li>Podmazivanje lanca</li>
+                        <li>Provera guma i pritiska</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <i class="fas fa-tools"></i>
+                    <h3>Kompletan Servis</h3>
+                    <ul>
+                        <li>Potpuna demontaža i čišćenje</li>
+                        <li>Zamena istrošenih delova</li>
+                        <li>Podešavanje svih komponenti</li>
+                        <li>Kontrola rama i viljuške</li>
+                        <li>Finalna provera i test vožnja</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <i class="fas fa-cog"></i>
+                    <h3>Popravke i Ugradnja</h3>
+                    <ul>
+                        <li>Krpljenje i zamena guma</li>
+                        <li>Ugradnja novih delova</li>
+                        <li>Popravka točkova</li>
+                        <li>Zamena lančanika</li>
+                        <li>Popravka kočionih sistema</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Specijalizovane Usluge</h3>
+                    <ul>
+                        <li>Podešavanje disk kočnica</li>
+                        <li>Centriranje točkova</li>
+                        <li>Podešavanje suspenzije</li>
+                        <li>Upgrade komponenti</li>
+                        <li>Konsultacije i saveti</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pricing-note">
+                <h3>Cene i Rokovi</h3>
+                <p>Cene servisa zavise od vrste usluge i stanja bicikla. Kontaktirajte nas za tačnu procenu i rokove izvršenja. Osnovni servis se obično završava isti dan, dok kompleksnije popravke mogu trajati 2-3 radna dana.</p>
+            </div>
+
+            <div class="cta-section">
+                <h3>Zakažite Servis</h3>
+                <p>Pozovite nas ili dođite direktno u radnju. Radujemo se da pomognemo!</p>
+                <div class="hero-buttons">
+                    <a href="tel:0677086710" class="btn btn-primary"><i class="fas fa-phone"></i> 067 708 6710</a>
+                    <a href="contact.html" class="btn btn-secondary"><i class="fas fa-envelope"></i> Pošalji Upit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>2UN Jovanovic</h4>
+                    <p>Vaš pouzdan partner za biciklističke delove i servis u Pirotu.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Linkovi</h4>
+                    <ul>
+                        <li><a href="index.html">Početna</a></li>
+                        <li><a href="products.html">Delovi</a></li>
+                        <li><a href="services.html">Servis</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 067 708 6710</li>
+                        <li><i class="fas fa-envelope"></i> unjovanovic@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 7 Juli br 16, Pirot</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 2UN Jovanovic. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

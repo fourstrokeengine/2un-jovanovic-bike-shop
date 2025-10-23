@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahtev za Ponudu - 2UN Jovanovic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .quote-page {
+            padding: 4rem 0;
+        }
+        .quote-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .quote-form {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        }
+        .quote-form h2 {
+            color: var(--dark-blue);
+            margin-bottom: 1.5rem;
+        }
+        .form-section {
+            margin-bottom: 2rem;
+        }
+        .form-section h3 {
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--dark-gray);
+            font-weight: 500;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: var(--secondary-blue);
+        }
+        .info-box {
+            background-color: var(--light-blue);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        .info-box h3 {
+            color: var(--dark-blue);
+            margin-bottom: 0.5rem;
+        }
+        .info-box p {
+            margin: 0;
+            color: var(--dark-gray);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo/logo veci.jpg" alt="2UN Jovanovic">
+                    </a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="products.html">Delovi</a></li>
+                    <li><a href="tires.html">Gume i Točkovi</a></li>
+                    <li><a href="services.html">Servis</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                    <a href="quote.html" class="cart-icon"><i class="fas fa-clipboard-list"></i></a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Zahtev za Ponudu</h1>
+            <p>Popunite formu i kontaktiraćemo vas u najkraćem roku</p>
+        </div>
+    </section>
+
+    <!-- Quote Page -->
+    <section class="quote-page">
+        <div class="container quote-container">
+            <div class="info-box">
+                <h3><i class="fas fa-info-circle"></i> Kako funkcioniše?</h3>
+                <p>Popunite formular sa detaljima o proizvodima koji vas interesuju. Kontaktiraćemo vas najbrže moguće sa tačnom cenom i dostupnošću. Možete nazvati i direktno na <strong>067 708 6710</strong>.</p>
+            </div>
+
+            <div class="quote-form">
+                <h2>Podaci za Ponudu</h2>
+                <form id="quoteForm" action="mailto:unjovanovic@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-section">
+                        <h3>Lični Podaci</h3>
+                        <div class="form-group">
+                            <label for="name">Ime i Prezime *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Detalji o Zahtevu</h3>
+                        <div class="form-group">
+                            <label for="productType">Tip Proizvoda</label>
+                            <select id="productType" name="productType">
+                                <option value="">Izaberite...</option>
+                                <option value="parts">Delovi i Komponente</option>
+                                <option value="tires">Gume i Točkovi</option>
+                                <option value="service">Servis Usluge</option>
+                                <option value="other">Ostalo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="productDetails">Detaljan Opis Proizvoda *</label>
+                            <textarea id="productDetails" name="productDetails" required placeholder="Unesite naziv proizvoda, šifru, količinu, ili bilo koje druge informacije..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Količina</label>
+                            <input type="number" id="quantity" name="quantity" min="1" value="1">
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Dodatne Informacije</h3>
+                        <div class="form-group">
+                            <label for="additionalNotes">Dodatne Napomene</label>
+                            <textarea id="additionalNotes" name="additionalNotes" placeholder="Bilo kakvi dodatni zahtevi ili pitanja..."></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Pošalji Zahtev
+                    </button>
+                </form>
+            </div>
+
+            <div class="info-box" style="margin-top: 2rem;">
+                <h3><i class="fas fa-clock"></i> Vreme Odgovora</h3>
+                <p>Trudimo se da odgovorimo na sve zahteve u roku od 24 sata. Za hitne slučajeve, pozovite nas direktno.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>2UN Jovanovic</h4>
+                    <p>Vaš pouzdan partner za biciklističke delove i servis u Pirotu.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Linkovi</h4>
+                    <ul>
+                        <li><a href="index.html">Početna</a></li>
+                        <li><a href="products.html">Delovi</a></li>
+                        <li><a href="services.html">Servis</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 067 708 6710</li>
+                        <li><i class="fas fa-envelope"></i> unjovanovic@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 7 Juli br 16, Pirot</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 2UN Jovanovic. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Pre-fill product details if coming from a product page
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const sku = urlParams.get('sku');
+            if (sku) {
+                document.getElementById('productDetails').value = `Šifra proizvoda: ${sku}\n\n`;
+            }
+        });
+    </script>
+</body>
+</html>
