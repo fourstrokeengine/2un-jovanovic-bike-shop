@@ -810,3 +810,145 @@ body {
         position: static;
     }
 }
+
+/* Brand Pages */
+.brands-page-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.brand-card-large {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-card-large:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.brand-card-large .brand-logo {
+    margin-bottom: 1.5rem;
+}
+
+.brand-card-large .brand-logo h2 {
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    margin: 0;
+}
+
+.brand-card-large p {
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* Individual Brand Page */
+.brand-detail-hero {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    color: var(--white);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.brand-detail-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.brand-detail-hero p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+.brand-content {
+    padding: 4rem 0;
+}
+
+.brand-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.brand-text h2 {
+    color: var(--dark-blue);
+    margin-bottom: 1.5rem;
+}
+
+.brand-text p {
+    line-height: 1.8;
+    color: var(--dark-gray);
+    margin-bottom: 1rem;
+}
+
+.brand-image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.brand-image-grid img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.brand-features {
+    background-color: var(--light-gray);
+    padding: 3rem;
+    border-radius: 10px;
+    margin: 3rem 0;
+}
+
+.brand-features h3 {
+    color: var(--dark-blue);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.brand-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.brand-features li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+
+.brand-features li:last-child {
+    border-bottom: none;
+}
+
+.brand-features li i {
+    color: var(--primary-blue);
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 968px) {
+    .brand-content-grid,
+    .brand-image-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .brand-detail-hero h1 {
+        font-size: 2.5rem;
+    }
+}

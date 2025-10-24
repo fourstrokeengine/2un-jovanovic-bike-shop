@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Upravljanje Zalihama</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Login Screen */
+        .login-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+        }
+
+        .login-box {
+            background-color: var(--white);
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .login-box h1 {
+            color: var(--dark-blue);
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .login-box p {
+            color: var(--gray);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            margin-bottom: 0.5rem;
+            color: var(--dark-gray);
+            font-weight: 600;
+        }
+
+        .form-group input {
+            padding: 0.875rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+        }
+
+        .login-btn {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 1rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: var(--secondary-blue);
+        }
+
+        .error-message {
+            background-color: #fee2e2;
+            color: #dc2626;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 1rem;
+            display: none;
+        }
+
+        /* Admin Panel */
+        .admin-container {
+            display: none;
+            padding: 3rem 0;
+        }
+
+        .admin-header {
+            background-color: var(--dark-blue);
+            color: var(--white);
+            padding: 2rem 0;
+            margin-bottom: 3rem;
+        }
+
+        .admin-header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .admin-header h1 {
+            margin: 0;
+        }
+
+        .logout-btn {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: var(--white);
+            border: 2px solid var(--white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .logout-btn:hover {
+            background-color: var(--white);
+            color: var(--dark-blue);
+        }
+
+        .admin-tabs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .admin-tab {
+            padding: 1rem 2rem;
+            background: none;
+            border: none;
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--gray);
+            transition: all 0.3s;
+        }
+
+        .admin-tab.active {
+            color: var(--primary-blue);
+            border-bottom-color: var(--primary-blue);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .inventory-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .stat-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-card h3 {
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .stat-card .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--dark-blue);
+        }
+
+        .stat-card .stat-icon {
+            font-size: 2rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .inventory-table {
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .table-header {
+            padding: 1.5rem;
+            background-color: var(--light-gray);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .search-box {
+            flex: 1;
+            max-width: 400px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background-color: var(--dark-blue);
+            color: var(--white);
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        tbody tr:hover {
+            background-color: var(--light-gray);
+        }
+
+        .stock-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .stock-in {
+            background-color: #d1fae5;
+            color: #065f46;
+        }
+
+        .stock-low {
+            background-color: #fed7aa;
+            color: #92400e;
+        }
+
+        .stock-out {
+            background-color: #fee2e2;
+            color: #991b1b;
+        }
+
+        .edit-btn {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .edit-btn:hover {
+            background-color: var(--secondary-blue);
+        }
+
+        @media (max-width: 968px) {
+            .admin-header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .admin-tabs {
+                overflow-x: auto;
+            }
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th, td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Login Screen -->
+    <div id="loginScreen" class="login-container">
+        <div class="login-box">
+            <h1><i class="fas fa-lock"></i> Admin Panel</h1>
+            <p>Prijavite se da biste pristupili sistemu za upravljanje zalihama</p>
+
+            <div id="errorMessage" class="error-message">
+                Pogrešna lozinka. Pokušajte ponovo.
+            </div>
+
+            <form class="login-form" onsubmit="return login(event)">
+                <div class="form-group">
+                    <label for="password">Lozinka</label>
+                    <input type="password" id="password" required autofocus>
+                </div>
+                <button type="submit" class="login-btn">
+                    <i class="fas fa-sign-in-alt"></i> Prijavi se
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Panel -->
+    <div id="adminPanel">
+        <!-- Admin Header -->
+        <header class="admin-header">
+            <div class="container">
+                <div class="admin-header-content">
+                    <h1><i class="fas fa-boxes"></i> Upravljanje Zalihama</h1>
+                    <button class="logout-btn" onclick="logout()">
+                        <i class="fas fa-sign-out-alt"></i> Odjavi se
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Admin Content -->
+        <div class="admin-container container">
+            <!-- Stats Dashboard -->
+            <div class="inventory-stats">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-box"></i></div>
+                    <h3>Ukupno Proizvoda</h3>
+                    <div class="stat-value" id="totalProducts">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+                    <h3>Na Stanju</h3>
+                    <div class="stat-value" id="inStock">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                    <h3>Niska Zaliha</h3>
+                    <div class="stat-value" id="lowStock">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-times-circle"></i></div>
+                    <h3>Nema Na Stanju</h3>
+                    <div class="stat-value" id="outOfStock">0</div>
+                </div>
+            </div>
+
+            <!-- Inventory Table -->
+            <div class="inventory-table">
+                <div class="table-header">
+                    <h2>Pregled Zaliha</h2>
+                    <div class="search-box">
+                        <input type="text" id="inventorySearch" placeholder="Pretraži po nazivu ili šifri...">
+                    </div>
+                </div>
+
+                <div style="overflow-x: auto;">
+                    <table id="inventoryTable">
+                        <thead>
+                            <tr>
+                                <th>Šifra</th>
+                                <th>Naziv</th>
+                                <th>Proizvođač</th>
+                                <th>Cena (RSD)</th>
+                                <th>Stanje</th>
+                                <th>Status</th>
+                                <th>Akcije</th>
+                            </tr>
+                        </thead>
+                        <tbody id="inventoryBody">
+                            <!-- Populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Password - CHANGE THIS TO YOUR SECURE PASSWORD
+        const ADMIN_PASSWORD = 'admin2025';
+
+        // Check if already logged in
+        if (sessionStorage.getItem('adminLoggedIn') === 'true') {
+            showAdminPanel();
+        }
+
+        function login(event) {
+            event.preventDefault();
+            const password = document.getElementById('password').value;
+
+            if (password === ADMIN_PASSWORD) {
+                sessionStorage.setItem('adminLoggedIn', 'true');
+                showAdminPanel();
+            } else {
+                document.getElementById('errorMessage').style.display = 'block';
+                document.getElementById('password').value = '';
+            }
+            return false;
+        }
+
+        function logout() {
+            sessionStorage.removeItem('adminLoggedIn');
+            location.reload();
+        }
+
+        function showAdminPanel() {
+            document.getElementById('loginScreen').style.display = 'none';
+            document.getElementById('adminPanel').querySelector('.admin-container').style.display = 'block';
+            loadInventory();
+        }
+
+        async function loadInventory() {
+            try {
+                const response = await fetch('data/products.json');
+                const products = await response.json();
+
+                displayStats(products);
+                displayInventory(products);
+
+                // Setup search
+                document.getElementById('inventorySearch').addEventListener('input', (e) => {
+                    filterInventory(products, e.target.value);
+                });
+            } catch (error) {
+                console.error('Error loading inventory:', error);
+            }
+        }
+
+        function displayStats(products) {
+            const total = products.length;
+            const inStock = products.filter(p => parseInt(p.Količina) > 5).length;
+            const lowStock = products.filter(p => {
+                const qty = parseInt(p.Količina);
+                return qty > 0 && qty <= 5;
+            }).length;
+            const outOfStock = products.filter(p => parseInt(p.Količina) === 0).length;
+
+            document.getElementById('totalProducts').textContent = total;
+            document.getElementById('inStock').textContent = inStock;
+            document.getElementById('lowStock').textContent = lowStock;
+            document.getElementById('outOfStock').textContent = outOfStock;
+        }
+
+        function displayInventory(products) {
+            const tbody = document.getElementById('inventoryBody');
+            tbody.innerHTML = products.map(product => {
+                const qty = parseInt(product.Količina);
+                let stockClass = 'stock-out';
+                let stockText = 'Nema';
+
+                if (qty > 5) {
+                    stockClass = 'stock-in';
+                    stockText = 'Na stanju';
+                } else if (qty > 0) {
+                    stockClass = 'stock-low';
+                    stockText = 'Nisko';
+                }
+
+                return `
+                    <tr>
+                        <td>${product.SKU}</td>
+                        <td>${product.Opis}</td>
+                        <td>${product.Proizvođač}</td>
+                        <td>${parseFloat(product.VP_Cena_Nakon_popusta_RSD).toLocaleString('sr-RS')}</td>
+                        <td>${qty}</td>
+                        <td><span class="stock-badge ${stockClass}">${stockText}</span></td>
+                        <td>
+                            <button class="edit-btn" onclick="editProduct('${product.SKU}')">
+                                <i class="fas fa-edit"></i> Izmeni
+                            </button>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        function filterInventory(products, searchTerm) {
+            const filtered = products.filter(p =>
+                p.SKU.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                p.Opis.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                p.Proizvođač.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+            displayInventory(filtered);
+        }
+
+        function editProduct(sku) {
+            alert(`Funkcija za izmenu proizvoda ${sku} će biti dostupna uskoro.\\nOvo zahteva backend server za trajno čuvanje promena.`);
+        }
+    </script>
+</body>
+</html>
