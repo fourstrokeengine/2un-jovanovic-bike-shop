@@ -29,3 +29,7 @@ build/
 .env
 .env.local
 .env.*.local
+
+# Original large images (keep locally, use optimized versions in assets/)
+pictures/
+source-pictures/
